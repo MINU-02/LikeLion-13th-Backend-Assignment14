@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  forward-headers-strategy: framework
+
+spring:
+  profiles:
+    active: prod
+
+culture:
+  api:
+    base-url: https://apis.data.go.kr/B553457/cultureinfo
+    auth-key: ${CULTURE_API_KEY}
